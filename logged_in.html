@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texas Purchaser Collective</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <style>
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.bottom-section{
+    background: rgb(255,255,255);
+}
+
+.btn-primary {
+    background-color: #002868;
+}
+
+.btn-primary:hover {
+    background-color: #165483;
+}
+
+.btn-secondary {
+    background: #BF0A30;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #A00010;
+    border: none;
+}
+
+.tab-content {
+    border-style: solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #d0d0d0;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: -18px;
+    padding-top: 18px;
+    border-radius: 4px;
+    background-color:white;
+    z-index: 1;
+    position: relative;
+}
+
+footer {
+    background-color: #002868;
+    padding: 20px;
+}
+
+.page-item.active {
+    background-color: #002868;
+}
+
+.pagination > li.active > a, .pagination > li.active > span{background-color:#002868!important}
+
+.nav-pills > li > a.active, .nav-pills .nav-link.active {
+    background-color: #002868;
+}
+
+thead {
+    background-color: #002868;
+    color: white;
+}
+
+.font-size-lg { font-size: 1.4rem; }
+.font-size-xlg { font-size: 2.2rem; }
+
+.dogear {
+    position: absolute;
+    bottom: -90px;
+    right: -190px;
+    background-color: red;
+    float: right;
+    text-align: center;
+    display: block;
+    width: 420px;
+    height: 220px;
+    transform: rotate(-45deg);
+    padding-top: 10px;
+    color: white;
+}
+
+.jumbotron > p, .jumbotron > h1 {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.jumbotron {
+    margin-top: 60px;
+    min-height: 340px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 5px 20px -5px rgba(64,64,64,0.4);
+    -moz-box-shadow: 0px 5px 20px -5px rgba(64,64,64,0.4);
+    box-shadow: 0px 5px 20px -5px rgba(64,64,64,0.4);
+}
+
+#logged-in-nav {
+    display: none;
+}
+
+.navbar {
+    background-color: #002868;
+}
+
+.navbar span,a {
+    color: white;
+}
+
+.vr-column-banner {
+    background: linear-gradient(180deg, rgba(216, 33, 38, 1) 0%, rgba(216, 33, 38, 0.8) 100%);
+    min-height: 280px;
+    height: 80%;
+}
+
+main {
+    padding-top: 70px;
+}
+
+#texas-hero {
+    min-height: 300px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%), url("texas-bluebonnet.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-header {
+    color: white;
+    padding: 10px;
+    background: rgba(10, 10, 10, 0.7);
+    display: inline;
+}
+
+.lg {
+    font-size: 40px;
+}
+
+.sm {
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.text-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+      /*
+         nav {
+             background-color: white;
+         }
+       */
+
+         nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+             position: relative;
+             z-index: 2;
+             border-color: #ccc #ccc transparent #ccc;
+         }
+
+         .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+             color: #495057;
+             background-color: #eee;
+         }
+         .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
+             background-color: #fefefe;
+         }
+
+         .nav-tabs .nav-link {
+             border: 1px solid #eee;
+             border-top-left-radius: .25rem;
+             border-top-right-radius: .25rem;
+             border-color: #ccc;
+             z-index: -1;
+         }
+
+         table {
+             width: 100%!important;
+         }
+
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-default fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            Texas Purchasers Collective
+                        </a>
+                    </div>
+                    <div class="navbar-center">
+                    </div>
+
+                    <div class="navbar-right">
+                        <a class="p-2" href="#">Bids</a>
+                        <span style="font-size: 20px">|</span>
+                        <a class="p-2" href="#">Purchasing Groups</a>
+                        <span style="font-size: 20px">|</span>
+                        <a class="p-2" href="#">Buyer Solutions</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+        <section class="bottom-section">
+            <div class="container">
+                <div id="texas-hero" class="card mb-4 p-4">
+                    <div class="card-body">
+                        <span class="hero-header lg">Texas Purchaser Collective</span><br>
+                        <span class="hero-header sm" style="position: relative; top: 1px;">Bids and RPFs from Local Texas Governments</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-md-10">
+                    <div class="container text-container">
+                        <h2>Texas Purchasing Collective</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+                <div class="col-md-2 my-auto">
+                    <div class="btn btn-secondary">Get Involved!</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="active-bids-tab" data-toggle="tab" href="#active-bids" role="tab" aria-controls="pills-home" aria-selected="true">Active Bids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="historical-bids-tab" data-toggle="tab" href="#historical-bids" role="tab" aria-controls="pills-profile" aria-selected="false">Historical Bids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="historical-bids-tab" data-toggle="tab" href="#historical-bids" role="tab" aria-controls="pills-profile" aria-selected="false">Historical Bids</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="active-bids" class="tab-pane fade show active" role="tabpanel">
+                        <table id="bid-table" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Solicitation Title</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Date Published</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Football Helmet Reconditiong</th>
+                                    <td>Georgia</td>
+                                    <td>08/06/2019</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Football Helmet Reconditiong</th>
+                                    <td>Georgia</td>
+                                    <td>08/06/2019</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Football Helmet Reconditiong</th>
+                                    <td>Georgia</td>
+                                    <td>08/06/2019</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="historical-bids" class="tab-pane fade" role="tabpanel">
+                        <p>Some content in Historical Bids.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div>
+                        <a href="#" class="btn btn-secondary my-2">Get Unlimited Access</a>
+                    </div>
+                    <span class="text-light">&copy; Copyright Vendor Registry 2019 | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></span>
+                </div>
+            </footer>
+
+
+        </section>
+
+        </main>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#bid-table').DataTable( {
+                    dom:
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-4'i><'col-sm-4'p><'col-sm-4'l>>",
+                    scrollX: true
+                });
+            } );
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+        </script>
+    </body>
+
+</html>
